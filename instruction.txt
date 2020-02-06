@@ -1,0 +1,4 @@
+ok
+tbl employee=[ id,name ]
+tbl_time=[ id,user_id,clockin,clockout,totaltimeWorked,totalBreaksUsed,isIn,isOut]
+tbl_breaks=[time_id,breakStart,breakEnd]

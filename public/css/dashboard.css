@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container-fluid{
+    text-align: center;
+    width: 90%;
+    padding: 5%;
+    background-color: blanchedalmond;
+}
+fieldset{
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    
+}

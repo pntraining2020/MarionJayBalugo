@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','employeeController@start');
+
+Route::get('/employee/{id}','employeeController@getEmployee');
+Route::get('/employee/ClockIn/{id}','employeeController@getEmployee');
