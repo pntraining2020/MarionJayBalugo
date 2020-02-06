@@ -30,6 +30,12 @@ window.onload = function() {
 
     currentTime(); // will display the clock as soon page load.
     setInterval(currentTime,500); // change the time ever half second
-    
-    
 };
+
+function disableMe1(){
+    document.getElementById("clock_in").disabled = true;
+    document.getElementById("clock_out").disabled = false;
+}function disableMe2(){
+    document.getElementById("clock_out").disabled = true;
+    document.getElementById("clock_in").disabled = false;
+}

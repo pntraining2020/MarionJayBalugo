@@ -39,14 +39,14 @@
         <!-- functionalities -->
         @if(url()->current() != "http://localhost:8000")
             <div class="container">
-                <button class="btn btn-primary" href="/employee/ClockIn/{{$personEsp->id}}">Clock In</button>
+                <button class="btn btn-primary" button onclick="disableMe1()" href="/employee/ClockIn/{{$personEsp->id}}" id="clock_in">Clock In</button>
                 <div class="container">
                 <button class="btn btn-primary">Start</button>
                 <button class="btn btn-primary">End</button>
                 <button class="btn btn-primary">Take Another Break</button>
                 </div>
-                
-                <button class="btn btn-primary" {{$personEsp->timerecord[0]->is_out ? '': 'disabled'}}>Clock Out</button>
+
+                <button class="btn btn-primary" button onclick="disableMe2()" id="clock_out" disabled>Clock Out</button>
             </div>
             <!-- Summary -->
             <div class="container">
